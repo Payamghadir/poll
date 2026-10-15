@@ -1,58 +1,1470 @@
+
 <!doctype html>
 <html lang="fa" dir="rtl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1020">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f4f7fc">
 <meta name="description" content="سامانه ثبت انتخاب کلاس و پیشنهادهای دانش‌آموزان دبیرستان دوره دوم پیام غدیر">
 <title>پیام غدیر | فرم دانش‌آموزی</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
 <style>
-:root{color-scheme:dark;--bg:#080d1b;--panel:rgba(19,27,49,.88);--line:rgba(255,255,255,.11);--muted:#aab5ce;--text:#f7f8ff;--blue:#8795ff;--cyan:#61e7d5;--pink:#e3a0ff;--green:#86f0c9}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;font-family:Vazirmatn,system-ui,sans-serif;background:radial-gradient(ellipse at 8% 6%,#343d80 0,transparent 32%),radial-gradient(ellipse at 94% 76%,#154b50 0,transparent 31%),radial-gradient(ellipse at 55% 100%,#34244c 0,transparent 32%),var(--bg);color:var(--text);padding:22px;overflow-x:hidden}.wrap{max-width:1040px;margin:auto}.top{display:flex;justify-content:space-between;align-items:center;gap:14px;margin:8px 0 36px}.brand{display:flex;align-items:center;gap:12px;font-weight:900}.logo{display:grid;place-items:center;width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,var(--blue),var(--cyan));color:#101526;font-size:24px;box-shadow:0 10px 35px #6578ff42}.muted{color:var(--muted)}.tag{font-size:12px;color:#e3e8ff;border:1px solid var(--line);padding:8px 12px;border-radius:99px;background:#ffffff08;white-space:nowrap}.hero{text-align:center;max-width:760px;margin:0 auto 30px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--cyan);font-size:13px;font-weight:800;padding:8px 13px;border:1px solid #61e7d52e;background:#61e7d50b;border-radius:99px}.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.35;margin:14px 0;background:linear-gradient(100deg,#fff,#bec7ff 52%,#75ead9);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{color:var(--muted);line-height:2;margin:0}.grid{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(260px,.8fr);gap:18px;align-items:stretch}.card{background:var(--panel);border:1px solid var(--line);border-radius:27px;padding:clamp(19px,4vw,32px);box-shadow:0 24px 80px #0004;backdrop-filter:blur(18px)}.card h2{margin:0 0 8px;font-size:21px}.sub{margin:0 0 22px;color:var(--muted);font-size:13px;line-height:1.95}.progress-head{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px;font-size:12px;color:#dfe5ff}.progress-track{height:7px;border-radius:99px;background:#ffffff10;overflow:hidden;margin-bottom:24px}.progress-bar{height:100%;width:33.333%;border-radius:99px;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:width .35s ease;box-shadow:0 0 18px #61e7d54d}.step-dots{display:flex;gap:8px;margin-bottom:24px}.step-dot{height:35px;flex:1;border:1px solid var(--line);border-radius:12px;display:flex;align-items:center;justify-content:center;gap:7px;color:var(--muted);font-size:11px;background:#ffffff03}.step-dot.active{border-color:#8795ff88;background:#8795ff18;color:#fff}.step-dot.done{border-color:#61e7d555;color:var(--cyan)}.step{animation:appear .25s ease}@keyframes appear{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}.step h3{font-size:20px;margin:0 0 8px}.step-help{font-size:13px;color:var(--muted);line-height:1.9;margin:0 0 19px}.field{display:block;margin:16px 0 8px;font-size:13px;color:#e0e6fa;font-weight:700}input,textarea{font:inherit;color:var(--text);width:100%;padding:15px;border-radius:15px;border:1px solid #ffffff1b;background:#0a1020;outline:none;transition:.2s}textarea{resize:vertical;min-height:140px;line-height:1.9}input:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #8795ff24}input::placeholder,textarea::placeholder{color:#7885a4}.classes{display:grid;gap:12px;margin-top:8px}.class-option{position:relative}.class-option input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}.class-option label{display:flex;align-items:center;gap:13px;border:1px solid var(--line);padding:16px;border-radius:17px;cursor:pointer;background:#ffffff04;transition:.2s}.class-option label:hover{transform:translateY(-1px);border-color:#8795ff77}.class-option input:checked+label{border-color:var(--cyan);background:#61e7d510;box-shadow:inset 0 0 0 1px #61e7d52c}.class-option input:checked+label:before{content:'✓';display:grid;place-items:center;color:#08131b;font-weight:900;background:var(--cyan);border-color:var(--cyan)}.class-option label:before{content:'';display:grid;place-items:center;width:22px;height:22px;border:1px solid #8490af;border-radius:50%;flex:none}.class-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#ffffff0b;font-size:22px}.class-text{font-weight:800}.class-desc{font-size:11px;color:var(--muted);margin-top:4px}.field-note{font-size:11px;color:var(--muted);line-height:1.8;margin-top:8px}.btn-row{display:flex;gap:10px;margin-top:23px}.btn{border:0;border-radius:14px;padding:14px 18px;font:inherit;font-weight:800;cursor:pointer;transition:transform .18s,opacity .18s}.btn:hover{transform:translateY(-1px)}.btn:disabled{opacity:.55;cursor:wait;transform:none}.primary{flex:1;color:#101526;background:linear-gradient(100deg,#aab5ff,#69ead9);box-shadow:0 10px 30px #7c8cff24}.secondary{background:#ffffff0b;border:1px solid var(--line);color:var(--text)}.status{display:none;margin-top:14px;border-radius:13px;padding:12px 14px;font-size:13px;line-height:1.9}.status.show{display:block}.status.ok{background:#3bd5a51a;border:1px solid #3bd5a544;color:#a1f4d9}.status.err{background:#ff6b7915;border:1px solid #ff6b7944;color:#ffbdc3}.side{display:flex;flex-direction:column;justify-content:space-between;gap:25px}.side-art{min-height:180px;display:grid;place-items:center;border-radius:21px;background:radial-gradient(circle at 50% 50%,#7888ff30,transparent 65%),linear-gradient(140deg,#ffffff09,#ffffff02);font-size:76px;position:relative;overflow:hidden}.side-art:after{content:'✦';position:absolute;top:20px;left:24px;color:var(--cyan);font-size:25px;opacity:.8}.tip{display:flex;gap:12px;align-items:flex-start;color:#dfe6ff;font-size:13px;line-height:1.9;margin:13px 0}.tip-icon{width:34px;height:34px;display:grid;place-items:center;background:#ffffff0b;border:1px solid var(--line);border-radius:11px;flex:none}.privacy{font-size:11px;line-height:1.9;color:#aab5ce;background:#ffffff05;border:1px solid var(--line);border-radius:13px;padding:12px;margin-top:19px}.success-view{text-align:center;padding:22px 5px 8px}.success-icon{width:82px;height:82px;border-radius:27px;margin:0 auto 18px;display:grid;place-items:center;background:linear-gradient(135deg,#61e7d52b,#8795ff2b);border:1px solid #61e7d55c;font-size:38px}.success-view h3{font-size:24px;margin:0 0 10px}.success-view p{color:var(--muted);line-height:2;font-size:14px}.admin{margin-top:22px}.admin-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.admin-tools{display:flex;gap:8px;flex-wrap:wrap}.hidden{display:none!important}.table-wrap{overflow:auto;margin-top:18px}table{border-collapse:collapse;width:100%;min-width:700px;font-size:12px}th,td{text-align:right;padding:12px;border-bottom:1px solid var(--line);vertical-align:top}th{color:#aab7d7;font-weight:700}td{color:#edf1ff;max-width:320px;white-space:pre-wrap;overflow-wrap:anywhere}.login-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.login-grid .full{grid-column:1/-1}.count{color:var(--cyan);font-weight:900}.footer{margin:24px 0 8px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#8995b2;font-size:11px}.admin-note{font-size:12px;color:var(--muted);line-height:1.9}@media(max-width:760px){body{padding:14px}.top{margin-bottom:28px;align-items:flex-start}.brand{font-size:13px}.logo{width:42px;height:42px}.tag{font-size:10px;padding:7px 9px;white-space:normal}.grid{grid-template-columns:1fr}.side{gap:16px}.side-art{min-height:105px;font-size:48px}.login-grid{grid-template-columns:1fr}.login-grid .full{grid-column:auto}.step-dot{font-size:10px;gap:4px}.step-dot span{display:none}.btn-row .btn{padding:13px 12px}.hero{margin-bottom:23px}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}}
+:root {
+  color-scheme: light;
+  --bg: #f4f7fc;
+  --panel: rgba(255,255,255,.94);
+  --surface: #fff;
+  --field-bg: #f7f9fd;
+  --soft: #edf1fa;
+  --line: rgba(37,53,86,.12);
+  --text: #202b43;
+  --heading: #17233b;
+  --muted: #64718a;
+  --blue: #5367e8;
+  --cyan: #087f8c;
+  --pink: #a855c9;
+  --green: #13876d;
+  --shadow: 0 18px 55px rgba(31,49,86,.09);
+  --overlay: rgba(24,35,58,.48);
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #080d1b;
+  --panel: rgba(19,27,49,.96);
+  --surface: #10182b;
+  --field-bg: #0a1020;
+  --soft: #202a43;
+  --line: rgba(255,255,255,.11);
+  --text: #f0f3ff;
+  --heading: #f7f8ff;
+  --muted: #aab5ce;
+  --blue: #8795ff;
+  --cyan: #61e7d5;
+  --pink: #e3a0ff;
+  --green: #86f0c9;
+  --shadow: 0 24px 80px rgba(0,0,0,.3);
+  --overlay: rgba(0,0,0,.7);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  color-scheme: light;
+}
+
+html[data-theme="dark"] { color-scheme: dark; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 22px;
+  overflow-x: hidden;
+  font-family: Vazirmatn, system-ui, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 8% 6%, rgba(83,103,232,.10), transparent 32%),
+    radial-gradient(ellipse at 94% 76%, rgba(8,127,140,.10), transparent 31%),
+    radial-gradient(ellipse at 55% 100%, rgba(168,85,201,.07), transparent 32%),
+    var(--bg);
+  transition: background-color .25s, color .25s;
+}
+
+button, input, textarea { font-family: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, a:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 4px;
+}
+
+.wrap { max-width: 1040px; margin: auto; }
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  margin: 8px 0 36px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  font-weight: 900;
+  color: var(--heading);
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 17px;
+  color: var(--blue);
+  background: linear-gradient(145deg, var(--surface), var(--soft));
+  border: 1px solid var(--line);
+  box-shadow: 0 8px 24px rgba(50,70,130,.08);
+}
+
+.logo svg { display: block; }
+
+.muted { color: var(--muted); }
+
+.tag {
+  font-size: 12px;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  padding: 9px 13px;
+  border-radius: 99px;
+  background: var(--panel);
+  white-space: nowrap;
+}
+
+.top-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 9px;
+  flex-wrap: wrap;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 10px 13px;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .2s, background .2s;
+  white-space: nowrap;
+}
+
+.theme-toggle:hover { transform: translateY(-1px); background: var(--soft); }
+
+.hero {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 30px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--cyan);
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 13px;
+  border: 1px solid color-mix(in srgb, var(--cyan) 22%, transparent);
+  background: color-mix(in srgb, var(--cyan) 6%, transparent);
+  border-radius: 99px;
+}
+
+.hero h1 {
+  font-size: clamp(30px,5vw,54px);
+  line-height: 1.45;
+  margin: 14px 0;
+  background: linear-gradient(100deg,#202b43,#5367e8 52%,#087f8c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+:root[data-theme="dark"] .hero h1 {
+  background-image: linear-gradient(100deg,#fff,#bec7ff 52%,#75ead9);
+}
+
+.hero p {
+  color: var(--muted);
+  line-height: 2;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.2fr) minmax(260px,.8fr);
+  gap: 18px;
+  align-items: stretch;
+}
+
+.card {
+  min-width: 0;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 27px;
+  padding: clamp(19px,4vw,32px);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.card h2 {
+  margin: 0 0 8px;
+  font-size: 21px;
+  color: var(--heading);
+}
+
+.sub {
+  margin: 0 0 22px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.95;
+}
+
+.progress-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.progress-track {
+  height: 7px;
+  border-radius: 99px;
+  background: var(--soft);
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 33.333%;
+  border-radius: 99px;
+  background: linear-gradient(90deg,var(--blue),var(--cyan));
+  transition: width .35s ease;
+  box-shadow: 0 0 18px color-mix(in srgb,var(--cyan) 30%,transparent);
+}
+
+.step-dots { display: flex; gap: 8px; margin-bottom: 24px; }
+
+.step-dot {
+  height: 35px;
+  flex: 1;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  background: var(--surface);
+}
+
+.step-dot.active {
+  border-color: var(--blue);
+  background: color-mix(in srgb,var(--blue) 10%,var(--surface));
+  color: var(--heading);
+}
+
+.step-dot.done { border-color: var(--cyan); color: var(--cyan); }
+
+.step { animation: appear .25s ease; }
+
+@keyframes appear {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.step h3 {
+  font-size: 20px;
+  margin: 0 0 8px;
+  color: var(--heading);
+}
+
+.step-help {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.9;
+  margin: 0 0 19px;
+}
+
+.field {
+  display: block;
+  margin: 16px 0 8px;
+  font-size: 13px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+input, textarea {
+  font-size: 14px;
+  color: var(--text);
+  width: 100%;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid var(--line);
+  background: var(--field-bg);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s, background .2s;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px color-mix(in srgb,var(--blue) 15%,transparent);
+}
+
+input::placeholder, textarea::placeholder { color: var(--muted); opacity: .8; }
+
+textarea { resize: vertical; min-height: 140px; line-height: 1.9; }
+
+.classes { display: grid; gap: 12px; margin-top: 8px; }
+.class-option { position: relative; }
+
+.class-option input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 1px;
+  height: 1px;
+}
+
+.class-option label {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  border: 1px solid var(--line);
+  padding: 16px;
+  border-radius: 17px;
+  cursor: pointer;
+  background: var(--surface);
+  transition: transform .2s,border-color .2s,background .2s;
+}
+
+.class-option label:hover { transform: translateY(-1px); border-color: var(--blue); }
+
+.class-option input:focus-visible + label {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.class-option input:checked + label {
+  border-color: var(--cyan);
+  background: color-mix(in srgb,var(--cyan) 8%,var(--surface));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb,var(--cyan) 18%,transparent);
+}
+
+.class-option input:checked + label:before {
+  content: '✓';
+  display: grid;
+  place-items: center;
+  color: var(--surface);
+  font-weight: 900;
+  background: var(--cyan);
+  border-color: var(--cyan);
+}
+
+.class-option label:before {
+  content: '';
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  flex: none;
+}
+
+.class-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  background: var(--soft);
+  font-size: 22px;
+  flex: none;
+}
+
+.class-text { font-weight: 800; color: var(--text); }
+.class-desc { font-size: 11px; color: var(--muted); margin-top: 4px; }
+.field-note { font-size: 11px; color: var(--muted); line-height: 1.8; margin-top: 8px; }
+
+.btn-row { display: flex; gap: 10px; margin-top: 23px; }
+
+.btn {
+  border: 0;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: transform .18s,opacity .18s,background .18s;
+}
+
+.btn:hover { transform: translateY(-1px); }
+.btn:disabled { opacity: .55; cursor: wait; transform: none; }
+
+.primary {
+  flex: 1;
+  color: #fff;
+  background: linear-gradient(100deg,#5367e8,#087f8c);
+  box-shadow: 0 8px 24px rgba(83,103,232,.13);
+}
+
+:root[data-theme="dark"] .primary {
+  color: #101526;
+  background: linear-gradient(100deg,#aab5ff,#69ead9);
+}
+
+.secondary {
+  background: var(--soft);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+.secondary:hover { background: var(--surface); }
+
+.status {
+  display: none;
+  margin-top: 14px;
+  border-radius: 13px;
+  padding: 12px 14px;
+  font-size: 13px;
+  line-height: 1.9;
+  overflow-wrap: anywhere;
+}
+
+.status.show { display: block; }
+
+.status.ok {
+  background: color-mix(in srgb,var(--green) 9%,transparent);
+  border: 1px solid color-mix(in srgb,var(--green) 30%,transparent);
+  color: var(--green);
+}
+
+.status.err {
+  background: rgba(229,72,88,.07);
+  border: 1px solid rgba(229,72,88,.25);
+  color: #c92f46;
+}
+
+:root[data-theme="dark"] .status.err { color: #ffbdc3; }
+
+.side { display: flex; flex-direction: column; justify-content: space-between; gap: 25px; }
+
+.side-art {
+  min-height: 180px;
+  display: grid;
+  place-items: center;
+  border-radius: 21px;
+  background:
+    radial-gradient(circle at 50% 50%,color-mix(in srgb,var(--blue) 14%,transparent),transparent 65%),
+    linear-gradient(140deg,var(--surface),var(--soft));
+  font-size: 76px;
+  position: relative;
+  overflow: hidden;
+}
+
+.side-art:after {
+  content: '✦';
+  position: absolute;
+  top: 20px;
+  left: 24px;
+  color: var(--cyan);
+  font-size: 25px;
+  opacity: .8;
+}
+
+.tip {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  color: var(--text);
+  font-size: 13px;
+  line-height: 1.9;
+  margin: 13px 0;
+}
+
+.tip-icon {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  flex: none;
+}
+
+.privacy {
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--muted);
+  background: var(--soft);
+  border: 1px solid var(--line);
+  border-radius: 13px;
+  padding: 12px;
+  margin-top: 19px;
+}
+
+.success-view { text-align: center; padding: 22px 5px 8px; }
+
+.success-icon {
+  width: 82px;
+  height: 82px;
+  border-radius: 27px;
+  margin: 0 auto 18px;
+  display: grid;
+  place-items: center;
+  background: color-mix(in srgb,var(--green) 10%,var(--surface));
+  border: 1px solid color-mix(in srgb,var(--green) 30%,transparent);
+  font-size: 38px;
+}
+
+.success-view h3 { font-size: 24px; margin: 0 0 10px; color: var(--heading); }
+.success-view p { color: var(--muted); line-height: 2; font-size: 14px; }
+
+.hidden { display: none !important; }
+
+/* Footer */
+.footer {
+  margin: 24px 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.admin-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 11px;
+  cursor: pointer;
+  padding: 7px 9px;
+  border-radius: 9px;
+  transition: color .2s,background .2s;
+}
+
+.admin-open-btn:hover { color: var(--blue); background: var(--soft); }
+
+/* Admin modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: var(--overlay);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  overflow-y: auto;
+  animation: fadeIn .2s ease;
+}
+
+.modal-overlay.hidden { display: none !important; }
+
+.modal-dialog {
+  width: min(900px,100%);
+  max-height: min(88vh,900px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 25px;
+  box-shadow: 0 28px 100px rgba(0,0,0,.22);
+  animation: modalIn .22s ease;
+}
+
+.modal-head {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 16px 22px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(14px);
+}
+
+.modal-head h2 { margin: 0; font-size: 16px; color: var(--heading); }
+
+.modal-close {
+  width: 37px;
+  height: 37px;
+  flex: none;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--soft);
+  color: var(--text);
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.modal-close:hover { background: var(--surface); }
+
+.modal-body { padding: 20px; }
+
+.admin { margin: 0; box-shadow: none; border-radius: 19px; }
+
+.admin-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.admin-tools { display: flex; gap: 8px; flex-wrap: wrap; }
+.admin-tools .btn { padding: 11px 13px; }
+.admin-note { font-size: 12px; color: var(--muted); line-height: 1.9; }
+
+.login-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.login-grid .full { grid-column: 1/-1; }
+
+.table-wrap { overflow: auto; margin-top: 18px; border: 1px solid var(--line); border-radius: 14px; }
+
+table { border-collapse: collapse; width: 100%; min-width: 650px; font-size: 12px; }
+
+th, td {
+  text-align: right;
+  padding: 12px;
+  border-bottom: 1px solid var(--line);
+  vertical-align: top;
+}
+
+th { color: var(--muted); font-weight: 700; background: var(--soft); }
+td { color: var(--text); max-width: 320px; white-space: pre-wrap; overflow-wrap: anywhere; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover td { background: color-mix(in srgb,var(--blue) 4%,transparent); }
+
+.count { color: var(--cyan); font-weight: 900; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(10px) scale(.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@media(max-width:760px) {
+  body { padding: 14px; }
+  .top { margin-bottom: 28px; align-items: flex-start; }
+  .brand { font-size: 13px; gap: 9px; }
+  .logo { width: 43px; height: 43px; border-radius: 14px; }
+  .logo svg { width: 30px; height: 30px; }
+  .tag { font-size: 10px; padding: 8px 9px; white-space: normal; }
+  .top-actions { gap: 6px; }
+  .theme-toggle { padding: 9px 10px; font-size: 11px; }
+  .grid { grid-template-columns: 1fr; }
+  .side { gap: 16px; }
+  .side-art { min-height: 105px; font-size: 48px; }
+  .step-dot { font-size: 10px; gap: 4px; }
+  .step-dot span { display: none; }
+  .btn-row .btn { padding: 13px 12px; }
+  .hero { margin-bottom: 23px; }
+  .modal-overlay { padding: 10px; align-items: center; }
+  .modal-dialog { max-height: 92vh; border-radius: 19px; }
+  .modal-head { padding: 13px 15px; }
+  .modal-body { padding: 12px; }
+  .admin { padding: 17px; }
+  .login-grid { grid-template-columns: 1fr; }
+  .login-grid .full { grid-column: auto; }
+  .admin-tools { width: 100%; }
+  .admin-tools .btn { flex: 1; }
+  .footer { align-items: flex-start; }
+}
+
+@media(max-width:420px) {
+  .top { gap: 8px; }
+  .brand > div:last-child { max-width: 180px; }
+  .top-actions { flex-direction: column; align-items: flex-end; }
+  .tag { max-width: 130px; text-align: center; }
+  .btn-row { gap: 7px; }
+  .btn-row .btn { font-size: 11px; }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *, *:before, *:after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 </style>
 </head>
-<body><div class="wrap">
-<header class="top"><div class="brand"><div class="logo">م</div><div>دبیرستان دوره دوم پیام غدیر<div class="muted" style="font-size:11px;font-weight:500;margin-top:2px">سامانه تعاملی دانش‌آموزان پایه دهم</div></div></div><div class="tag">✨ سال تحصیلی جدید · پایه دهم</div></header>
-<section class="hero"><div class="eyebrow">✦ صدای تو مهم است ✦</div><h1>با هم، مدرسه‌مان را بهتر می‌سازیم</h1><p>چند قدم کوتاه برای ثبت اطلاعات و شنیدن پیشنهادهای تو.<br>فرم را مرحله‌به‌مرحله تکمیل کن؛ کمتر از یک دقیقه زمان می‌برد. 🚀</p></section>
-<main class="grid"><section class="card" id="formCard"><h2>فرم دانش‌آموزی</h2><p class="sub">هر مرحله را کامل کن و برای رفتن به مرحلهٔ بعد، روی دکمهٔ ادامه بزن.</p>
-<div id="wizard"><div class="progress-head"><span id="stepLabel">مرحلهٔ ۱ از ۳</span><span id="stepPercent">۳۳٪</span></div><div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
-<div class="step-dots" aria-label="مراحل فرم"><div class="step-dot active" id="dot1">① <span>مشخصات</span></div><div class="step-dot" id="dot2">② <span>انتخاب کلاس</span></div><div class="step-dot" id="dot3">③ <span>پیشنهادها</span></div></div>
-<form id="responseForm" novalidate>
-<section class="step" data-step="1" id="step1"><h3>اول از همه، خودت رو معرفی کن 👋</h3><p class="step-help">نام و نام خانوادگی‌ات را دقیق وارد کن تا ثبتت با اطلاعات دیگران اشتباه نشود.</p><label class="field" for="name">نام و نام خانوادگی</label><input id="name" name="name" maxlength="80" minlength="2" autocomplete="name" placeholder="مثلاً: محمدرضا صفرخانیان" required><div class="field-note">لطفاً از نام واقعی خودت استفاده کن.</div><div class="btn-row"><button class="btn primary" id="next1" type="button">ادامه به انتخاب کلاس ←</button></div></section>
-<section class="step hidden" data-step="2" id="step2"><h3>کلاس خودت رو انتخاب کن 🎓</h3><p class="step-help">یکی از گزینه‌های زیر را انتخاب کن؛ قبل از ادامه، انتخابت را بررسی کن.</p><div class="classes"><div class="class-option"><input type="radio" id="hamat" name="class_name" value="کلاس شهید همت"><label for="hamat"><span class="class-icon">🏅</span><span><div class="class-text">کلاس شهید همت</div><div class="class-desc">برای دانش‌آموزان این کلاس</div></span></label></div><div class="class-option"><input type="radio" id="bagheri" name="class_name" value="کلاس شهید باقری"><label for="bagheri"><span class="class-icon">🚀</span><span><div class="class-text">کلاس شهید باقری</div><div class="class-desc">برای دانش‌آموزان این کلاس</div></span></label></div></div><div class="btn-row"><button class="btn secondary" type="button" data-back="1">→ مرحلهٔ قبل</button><button class="btn primary" type="button" id="next2">ادامه به بخش پیشنهادها ←</button></div></section>
-<section class="step hidden" data-step="3" id="step3"><h3>نظرتون چیه؟ 💡</h3><p class="step-help">اگر پیشنهادی برای بهتر شدن مدرسه، کلاس‌ها، برنامه‌ها یا امکانات داری، خوشحال می‌شویم بشنویم. این بخش اختیاری است.</p><label class="field" for="feedback">پیشنهاد یا نظرت</label><textarea id="feedback" name="feedback" maxlength="1200" placeholder="مثلاً: دوست دارم برای ... برنامهٔ بیشتری داشته باشیم؛ یا به نظرم بهتر است ..."></textarea><div class="field-note"><span id="charCount">۰</span> از ۱۲۰۰ نویسه · لطفاً اطلاعات خصوصی خودت یا دیگران، شماره تماس یا رمز عبور ننویس.</div><div class="btn-row"><button class="btn secondary" type="button" data-back="2">→ مرحلهٔ قبل</button><button class="btn primary" id="submitBtn" type="submit">ثبت نهایی پاسخ‌ها ✓</button></div></section>
-</form><div id="formStatus" class="status" role="status" aria-live="polite"></div>
-</div><div id="successView" class="success-view hidden"><div class="success-icon">🎉</div><h3>ممنون از همراهی تو!</h3><p>پاسخ‌هایت با موفقیت ثبت شد.<br>با کمک پیشنهادهای شما می‌توانیم مدرسه‌ای بهتر بسازیم.</p><button class="btn secondary" id="newResponseBtn" type="button">ثبت پاسخ جدید</button></div>
-<div class="privacy">🔒 اطلاعات این فرم برای استفادهٔ داخلی مدرسه ثبت می‌شود. پیشنهاد دادن اختیاری است؛ لطفاً اطلاعات حساس خودت یا دیگران را وارد نکن.</div></section>
-<aside class="card side"><div><div class="side-art">🌱</div><h2 style="margin-top:22px">ایده‌های کوچک، تغییرهای بزرگ.</h2><p class="sub" style="margin-bottom:0">مدرسه فقط کلاس و کتاب نیست؛ با همکاری هم می‌توانیم تجربهٔ بهتری بسازیم.</p></div><div><div class="tip"><span class="tip-icon">🧭</span><span><b>مرحله‌به‌مرحله</b><br>هر بار فقط یک سؤال؛ با خیال راحت ادامه بده.</span></div><div class="tip"><span class="tip-icon">💬</span><span><b>نظر تو ارزشمنده</b><br>پیشنهادها می‌توانند دربارهٔ امکانات، برنامه‌ها و فضای مدرسه باشند.</span></div><div class="tip"><span class="tip-icon">📱</span><span><b>راحت در موبایل</b><br>فرم برای گوشی، تبلت و کامپیوتر سازگار شده است.</span></div></div></aside></main>
-<section class="card admin" id="adminSection"><div class="admin-head"><div><h2>پنل مدیریت</h2><p class="sub" style="margin:6px 0 0">این بخش برای مشاهدهٔ پاسخ‌هاست و فقط مدیر مجاز باید به داده‌ها دسترسی داشته باشد.</p></div><span class="tag">🔐 دسترسی خصوصی</span></div>
-<div id="loginBox" style="margin-top:20px"><form id="loginForm" class="login-grid"><div><label class="field" for="email">ایمیل مدیر</label><input type="email" id="email" autocomplete="username" placeholder="ایمیل حساب مدیر" required></div><div><label class="field" for="password">رمز عبور</label><input type="password" id="password" autocomplete="current-password" placeholder="رمز عبور حساب مدیر" required></div><div class="full"><button class="btn primary" id="loginBtn" type="submit">ورود به پنل مدیریت</button></div></form><div id="loginStatus" class="status" role="status" aria-live="polite"></div></div>
-<div id="dashboard" class="hidden"><div class="admin-head" style="margin-top:20px"><div class="muted">تعداد ثبت‌ها: <span id="count" class="count">۰</span></div><div class="admin-tools"><button class="btn secondary" id="refreshBtn" type="button">↻ به‌روزرسانی</button><button class="btn secondary" id="csvBtn" type="button">خروجی CSV</button><button class="btn secondary" id="logoutBtn" type="button">خروج</button></div></div><div id="dashboardStatus" class="status" role="status" aria-live="polite"></div><div class="table-wrap"><table><thead><tr><th>ردیف</th><th>نام و نام خانوادگی</th><th>کلاس</th><th>نظر یا پیشنهاد</th><th>زمان ثبت</th></tr></thead><tbody id="responsesBody"><tr><td colspan="5" class="muted">برای نمایش اطلاعات، به پنل وارد شوید.</td></tr></tbody></table></div></div></section>
-<footer class="footer"><span>© دبیرستان دوره دوم پیام غدیر</span><span>طراحی اختصاصی پیام غدیر</span></footer></div>
+
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div class="brand">
+    <div class="logo" aria-label="نشان دبیرستان پیام غدیر">
+      <svg viewBox="0 0 48 48" width="35" height="35" fill="none" aria-hidden="true">
+        <path d="M24 3 43 14v20L24 45 5 34V14L24 3Z" stroke="currentColor" stroke-width="1.8"/>
+        <path d="M13 18h22M13 24h22M13 30h22" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+        <path d="m18 13 6-4 6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+    <div>
+      دبیرستان دوره دوم پیام غدیر
+      <div class="muted" style="font-size:11px;font-weight:500;margin-top:2px">
+        سامانه تعاملی دانش‌آموزان پایه دهم
+      </div>
+    </div>
+  </div>
+
+  <div class="top-actions">
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="فعال‌کردن حالت تیره">
+      <span id="themeIcon" aria-hidden="true">🌙</span>
+      <span id="themeLabel">حالت تیره</span>
+    </button>
+    <div class="tag">پایه دهم</div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">✦ صدای تو مهم است ✦</div>
+  <h1>با هم، مدرسه‌مان را بهتر می‌سازیم</h1>
+  <p>
+    چند قدم کوتاه برای ثبت اطلاعات و شنیدن پیشنهادهای تو.<br>
+    فرم را مرحله‌به‌مرحله تکمیل کن؛ کمتر از یک دقیقه زمان می‌برد. 🚀
+  </p>
+</section>
+
+<main class="grid">
+
+  <section class="card" id="formCard">
+    <h2>فرم دانش‌آموزی</h2>
+    <p class="sub">هر مرحله را کامل کن و برای رفتن به مرحلهٔ بعد، روی دکمهٔ ادامه بزن.</p>
+
+    <div id="wizard">
+      <div class="progress-head">
+        <span id="stepLabel">مرحلهٔ ۱ از ۳</span>
+        <span id="stepPercent">۳۳٪</span>
+      </div>
+
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+
+      <div class="step-dots" aria-label="مراحل فرم">
+        <div class="step-dot active" id="dot1">① <span>مشخصات</span></div>
+        <div class="step-dot" id="dot2">② <span>انتخاب کلاس</span></div>
+        <div class="step-dot" id="dot3">③ <span>پیشنهادها</span></div>
+      </div>
+
+      <form id="responseForm" novalidate>
+
+        <section class="step" data-step="1" id="step1">
+          <h3>اول از همه، خودت رو معرفی کن 👋</h3>
+          <p class="step-help">نام و نام خانوادگی‌ات را دقیق وارد کن تا ثبتت با اطلاعات دیگران اشتباه نشود.</p>
+
+          <label class="field" for="name">نام و نام خانوادگی</label>
+          <input id="name" name="name" maxlength="80" minlength="2" autocomplete="name" placeholder="مثلاً: محمدرضا صفرخانیان" required>
+
+          <div class="field-note">لطفاً از نام واقعی خودت استفاده کن.</div>
+
+          <div class="btn-row">
+            <button class="btn primary" id="next1" type="button">ادامه به انتخاب کلاس ←</button>
+          </div>
+        </section>
+
+        <section class="step hidden" data-step="2" id="step2">
+          <h3>کلاس خودت رو انتخاب کن 🎓</h3>
+          <p class="step-help">یکی از گزینه‌های زیر را انتخاب کن؛ قبل از ادامه، انتخابت را بررسی کن.</p>
+
+          <div class="classes">
+            <div class="class-option">
+              <input type="radio" id="hamat" name="class_name" value="کلاس شهید همت">
+              <label for="hamat">
+                <span class="class-icon">🏅</span>
+                <span>
+                  <div class="class-text">کلاس شهید همت</div>
+                  <div class="class-desc">برای دانش‌آموزان این کلاس</div>
+                </span>
+              </label>
+            </div>
+
+            <div class="class-option">
+              <input type="radio" id="bagheri" name="class_name" value="کلاس شهید باقری">
+              <label for="bagheri">
+                <span class="class-icon">🚀</span>
+                <span>
+                  <div class="class-text">کلاس شهید باقری</div>
+                  <div class="class-desc">برای دانش‌آموزان این کلاس</div>
+                </span>
+              </label>
+            </div>
+          </div>
+
+          <div class="btn-row">
+            <button class="btn secondary" type="button" data-back="1">→ مرحلهٔ قبل</button>
+            <button class="btn primary" type="button" id="next2">ادامه به بخش پیشنهادها ←</button>
+          </div>
+        </section>
+
+        <section class="step hidden" data-step="3" id="step3">
+          <h3>نظرتون چیه؟ 💡</h3>
+          <p class="step-help">اگر پیشنهادی برای بهتر شدن مدرسه، کلاس‌ها، برنامه‌ها یا امکانات داری، خوشحال می‌شویم بشنویم. این بخش اختیاری است.</p>
+
+          <label class="field" for="feedback">پیشنهاد یا نظرت</label>
+          <textarea id="feedback" name="feedback" maxlength="1200" placeholder="مثلاً: دوست دارم برای ... برنامهٔ بیشتری داشته باشیم؛ یا به نظرم بهتر است ..."></textarea>
+
+          <div class="field-note">
+            <span id="charCount">۰</span> از ۱۲۰۰ نویسه · لطفاً اطلاعات خصوصی خودت یا دیگران، شماره تماس یا رمز عبور ننویس.
+          </div>
+
+          <div class="btn-row">
+            <button class="btn secondary" type="button" data-back="2">→ مرحلهٔ قبل</button>
+            <button class="btn primary" id="submitBtn" type="submit">ثبت نهایی پاسخ‌ها ✓</button>
+          </div>
+        </section>
+
+      </form>
+
+      <div id="formStatus" class="status" role="status" aria-live="polite"></div>
+    </div>
+
+    <div id="successView" class="success-view hidden">
+      <div class="success-icon">🎉</div>
+      <h3>ممنون از همراهی تو!</h3>
+      <p>پاسخ‌هایت با موفقیت ثبت شد.<br>با کمک پیشنهادهای شما می‌توانیم مدرسه‌ای بهتر بسازیم.</p>
+      <button class="btn secondary" id="newResponseBtn" type="button">ثبت پاسخ جدید</button>
+    </div>
+
+    <div class="privacy">
+      🔒 اطلاعات این فرم برای استفادهٔ داخلی مدرسه ثبت می‌شود. پیشنهاد دادن اختیاری است؛ لطفاً اطلاعات حساس خودت یا دیگران را وارد نکن.
+    </div>
+  </section>
+
+  <aside class="card side">
+    <div>
+      <div class="side-art">🌱</div>
+      <h2 style="margin-top:22px">ایده‌های کوچک، تغییرهای بزرگ.</h2>
+      <p class="sub" style="margin-bottom:0">مدرسه فقط کلاس و کتاب نیست؛ با همکاری هم می‌توانیم تجربهٔ بهتری بسازیم.</p>
+    </div>
+
+    <div>
+      <div class="tip">
+        <span class="tip-icon">🧭</span>
+        <span><b>مرحله‌به‌مرحله</b><br>هر بار فقط یک سؤال؛ با خیال راحت ادامه بده.</span>
+      </div>
+      <div class="tip">
+        <span class="tip-icon">💬</span>
+        <span><b>نظر تو ارزشمنده</b><br>پیشنهادها می‌توانند دربارهٔ امکانات، برنامه‌ها و فضای مدرسه باشند.</span>
+      </div>
+      <div class="tip">
+        <span class="tip-icon">📱</span>
+        <span><b>راحت در موبایل</b><br>فرم برای گوشی، تبلت و کامپیوتر سازگار شده است.</span>
+      </div>
+    </div>
+  </aside>
+
+</main>
+
+<footer class="footer">
+  <span>© دبیرستان دوره دوم پیام غدیر</span>
+  <button class="admin-open-btn" id="openAdminBtn" type="button">
+    <span aria-hidden="true">🔐</span>
+    <span id="adminButtonLabel">ورود مدیر</span>
+  </button>
+</footer>
+
+</div>
+
+<!-- پنجره مستقل مدیریت -->
+<div class="modal-overlay hidden" id="adminModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal-dialog">
+    <div class="modal-head">
+      <h2 id="modalTitle">🔐 پنل مدیریت پیام غدیر</h2>
+      <button class="modal-close" id="closeAdminBtn" type="button" aria-label="بستن پنجره">×</button>
+    </div>
+
+    <div class="modal-body">
+      <section class="card admin" id="adminSection">
+        <div class="admin-head">
+          <div>
+            <h2>پنل مدیریت</h2>
+            <p class="sub" style="margin:6px 0 0">این بخش برای مشاهدهٔ پاسخ‌هاست و فقط مدیر مجاز باید به داده‌ها دسترسی داشته باشد.</p>
+          </div>
+          <span class="tag">🔐 دسترسی خصوصی</span>
+        </div>
+
+        <div id="loginBox" style="margin-top:20px">
+          <form id="loginForm" class="login-grid">
+            <div>
+              <label class="field" for="email">ایمیل مدیر</label>
+              <input type="email" id="email" autocomplete="username" placeholder="ایمیل حساب مدیر" required>
+            </div>
+
+            <div>
+              <label class="field" for="password">رمز عبور</label>
+              <input type="password" id="password" autocomplete="current-password" placeholder="رمز عبور حساب مدیر" required>
+            </div>
+
+            <div class="full">
+              <button class="btn primary" id="loginBtn" type="submit">ورود به پنل مدیریت</button>
+            </div>
+          </form>
+
+          <div id="loginStatus" class="status" role="status" aria-live="polite"></div>
+        </div>
+
+        <div id="dashboard" class="hidden">
+          <div class="admin-head" style="margin-top:20px">
+            <div class="muted">تعداد ثبت‌ها: <span id="count" class="count">۰</span></div>
+            <div class="admin-tools">
+              <button class="btn secondary" id="refreshBtn" type="button">↻ به‌روزرسانی</button>
+              <button class="btn secondary" id="csvBtn" type="button">خروجی CSV</button>
+              <button class="btn secondary" id="logoutBtn" type="button">خروج</button>
+            </div>
+          </div>
+
+          <div id="dashboardStatus" class="status" role="status" aria-live="polite"></div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>ردیف</th>
+                  <th>نام و نام خانوادگی</th>
+                  <th>کلاس</th>
+                  <th>نظر یا پیشنهاد</th>
+                  <th>زمان ثبت</th>
+                </tr>
+              </thead>
+              <tbody id="responsesBody">
+                <tr><td colspan="5" class="muted">برای نمایش اطلاعات، به پنل وارد شوید.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 <script>
-// Publishable key is intended for browser use. Never put a sb_secret_ or service_role key in this file.
+'use strict';
+
+/* تنظیمات Supabase اصلی */
 const SUPABASE_URL = 'https://hjbbatmbdkaoywuhvffw.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_9TLm2qNj2YRmA50UrqSIqw_gyOd7ZrB';
-const client = window.supabase.createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}});
+
+const client = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_PUBLISHABLE_KEY,
+  {
+    auth: {
+      persistSession: true,
+      autoRefreshToken: true,
+      detectSessionInUrl: true
+    }
+  }
+);
+
 const $ = id => document.getElementById(id);
-let cachedRows = [], currentStep = 1;
-function showStatus(id,message,type='ok'){const el=$(id);el.textContent=message;el.className='status show '+type;}
-function hideStatus(id){$(id).className='status';}
-function faNumber(n){return new Intl.NumberFormat('fa-IR').format(n);}
-function safeText(tag,text){const el=document.createElement(tag);el.textContent=text ?? '';return el;}
-function renderStep(step){currentStep=step;for(let i=1;i<=3;i++){const section=$('step'+i),dot=$('dot'+i);section.classList.toggle('hidden',i!==step);dot.classList.toggle('active',i===step);dot.classList.toggle('done',i<step);if(i<step)dot.firstChild.textContent='✓ ';else dot.firstChild.textContent=['① ','② ','③ '][i-1];}const pct=Math.round(step/3*100);$('progressBar').style.width=pct+'%';$('stepLabel').textContent='مرحلهٔ '+faNumber(step)+' از ۳';$('stepPercent').textContent=faNumber(pct)+'٪';hideStatus('formStatus');}
-$('next1').addEventListener('click',()=>{const name=$('name').value.trim();if(name.length<2){showStatus('formStatus','لطفاً نام و نام خانوادگی‌ات را وارد کن.','err');$('name').focus();return;}renderStep(2);});
-$('next2').addEventListener('click',()=>{if(!document.querySelector('input[name="class_name"]:checked')){showStatus('formStatus','لطفاً یکی از دو کلاس را انتخاب کن.','err');return;}renderStep(3);});
-document.querySelectorAll('[data-back]').forEach(btn=>btn.addEventListener('click',()=>renderStep(Number(btn.dataset.back))));
-$('feedback').addEventListener('input',()=>{$('charCount').textContent=faNumber($('feedback').value.length);});
-$('responseForm').addEventListener('submit',async e=>{e.preventDefault();hideStatus('formStatus');const btn=$('submitBtn');btn.disabled=true;btn.textContent='در حال ثبت پاسخ‌ها…';const name=$('name').value.trim();const chosen=document.querySelector('input[name="class_name"]:checked');const feedback=$('feedback').value.trim();if(name.length<2||!chosen){showStatus('formStatus','اطلاعات مرحله‌های قبل کامل نیست؛ لطفاً به مرحلهٔ مربوط برگرد.','err');btn.disabled=false;btn.textContent='ثبت نهایی پاسخ‌ها ✓';return;}try{const {error}=await client.from('student_responses').insert({name,class_name:chosen.value,feedback:feedback||null});if(error)throw error;$('wizard').classList.add('hidden');$('successView').classList.remove('hidden');$('formStatus').className='status';}catch(err){console.error(err);let message='ثبت پاسخ انجام نشد. اتصال اینترنت یا تنظیمات جدول را بررسی کن.';if(err?.code==='PGRST204'||/feedback/i.test(err?.message||''))message='ستون پیشنهادها هنوز به جدول اضافه نشده است. مدیر سایت باید دستور SQL راهنما را در Supabase اجرا کند.';showStatus('formStatus',message,'err');}finally{btn.disabled=false;btn.textContent='ثبت نهایی پاسخ‌ها ✓';}});
-$('newResponseBtn').addEventListener('click',()=>{$('responseForm').reset();$('charCount').textContent='۰';$('successView').classList.add('hidden');$('wizard').classList.remove('hidden');renderStep(1);$('name').focus();});
-$('loginForm').addEventListener('submit',async e=>{e.preventDefault();hideStatus('loginStatus');const btn=$('loginBtn');btn.disabled=true;btn.textContent='در حال ورود…';try{const {error}=await client.auth.signInWithPassword({email:$('email').value.trim(),password:$('password').value});if(error)throw error;await syncSession();}catch(err){console.error(err);showStatus('loginStatus','ورود ناموفق بود. ایمیل و رمز عبور را بررسی کن.','err');}finally{btn.disabled=false;btn.textContent='ورود به پنل مدیریت';}});
-async function syncSession(){const {data:{session}}=await client.auth.getSession();if(session){$('loginBox').classList.add('hidden');$('dashboard').classList.remove('hidden');await loadRows();}else{$('dashboard').classList.add('hidden');$('loginBox').classList.remove('hidden');}}
-async function loadRows(){hideStatus('dashboardStatus');const loading=document.createElement('tr'),loadingCell=safeText('td','در حال دریافت اطلاعات…');loadingCell.colSpan=5;loadingCell.className='muted';loading.append(loadingCell);$('responsesBody').replaceChildren(loading);try{const {data,error}=await client.from('student_responses').select('id,name,class_name,feedback,created_at').order('created_at',{ascending:false});if(error)throw error;cachedRows=data||[];$('count').textContent=faNumber(cachedRows.length);const body=$('responsesBody');body.replaceChildren();if(!cachedRows.length){const tr=document.createElement('tr'),td=safeText('td','هنوز پاسخی ثبت نشده است.');td.colSpan=5;td.className='muted';tr.append(td);body.append(tr);return;}cachedRows.forEach((r,i)=>{const tr=document.createElement('tr');tr.append(safeText('td',faNumber(i+1)),safeText('td',r.name),safeText('td',r.class_name),safeText('td',r.feedback||'—'),safeText('td',new Date(r.created_at).toLocaleString('fa-IR')));body.append(tr);});}catch(err){console.error(err);cachedRows=[];$('count').textContent='۰';$('responsesBody').replaceChildren();const tr=document.createElement('tr'),td=safeText('td','امکان دریافت اطلاعات وجود ندارد. وجود ستون feedback و سیاست دسترسی مدیر را بررسی کن.');td.colSpan=5;td.className='muted';tr.append(td);$('responsesBody').append(tr);showStatus('dashboardStatus','خواندن اطلاعات ممکن نشد؛ ممکن است ستون feedback هنوز ساخته نشده باشد یا حساب واردشده مدیر مجاز نباشد.','err');}}
-$('refreshBtn').addEventListener('click',loadRows);
-$('logoutBtn').addEventListener('click',async()=>{await client.auth.signOut();cachedRows=[];await syncSession();});
-$('csvBtn').addEventListener('click',()=>{if(!cachedRows.length){showStatus('dashboardStatus','اطلاعاتی برای خروجی گرفتن وجود ندارد.','err');return;}const rows=[['نام و نام خانوادگی','کلاس','نظر یا پیشنهاد','زمان ثبت'],...cachedRows.map(r=>[r.name,r.class_name,r.feedback||'',new Date(r.created_at).toLocaleString('fa-IR')])];const csv='\uFEFF'+rows.map(row=>row.map(v=>'"'+String(v??'').replace(/"/g,'""')+'"').join(',')).join('\r\n');const url=URL.createObjectURL(new Blob([csv],{type:'text/csv;charset=utf-8;'}));const a=document.createElement('a');a.href=url;a.download='payam-ghadir-responses.csv';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);});
-client.auth.onAuthStateChange(()=>{setTimeout(()=>syncSession(),0);});
-renderStep(1);syncSession();
-</script></body></html>
+
+let cachedRows = [];
+let currentStep = 1;
+let sessionChecked = false;
+let loadingRows = false;
+
+/* -------------------- مدیریت تم -------------------- */
+
+function applyTheme(theme) {
+  const dark = theme === 'dark';
+
+  document.documentElement.dataset.theme = dark ? 'dark' : 'light';
+  document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+
+  $('themeIcon').textContent = dark ? '☀️' : '🌙';
+  $('themeLabel').textContent = dark ? 'حالت روشن' : 'حالت تیره';
+
+  $('themeToggle').setAttribute(
+    'aria-label',
+    dark ? 'فعال‌کردن حالت روشن' : 'فعال‌کردن حالت تیره'
+  );
+
+  document.querySelector('meta[name="theme-color"]')
+    ?.setAttribute('content', dark ? '#080d1b' : '#f4f7fc');
+}
+
+let savedTheme = 'light';
+
+try {
+  savedTheme = localStorage.getItem('payam-ghadir-theme') || 'light';
+} catch (_) {}
+
+applyTheme(savedTheme);
+
+$('themeToggle').addEventListener('click', () => {
+  const nextTheme =
+    document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+
+  applyTheme(nextTheme);
+
+  try {
+    localStorage.setItem('payam-ghadir-theme', nextTheme);
+  } catch (_) {}
+});
+
+/* -------------------- توابع عمومی -------------------- */
+
+function showStatus(id, message, type = 'ok') {
+  const el = $(id);
+  el.textContent = message;
+  el.className = 'status show ' + type;
+}
+
+function hideStatus(id) {
+  $(id).className = 'status';
+}
+
+function faNumber(n) {
+  return new Intl.NumberFormat('fa-IR').format(n);
+}
+
+function safeText(tag, text) {
+  const el = document.createElement(tag);
+  el.textContent = text ?? '';
+  return el;
+}
+
+/* -------------------- مراحل فرم -------------------- */
+
+function renderStep(step) {
+  currentStep = step;
+
+  for (let i = 1; i <= 3; i++) {
+    const section = $('step' + i);
+    const dot = $('dot' + i);
+
+    section.classList.toggle('hidden', i !== step);
+    dot.classList.toggle('active', i === step);
+    dot.classList.toggle('done', i < step);
+
+    dot.firstChild.textContent = i < step
+      ? '✓ '
+      : ['① ', '② ', '③ '][i - 1];
+  }
+
+  const pct = Math.round(step / 3 * 100);
+
+  $('progressBar').style.width = pct + '%';
+  $('stepLabel').textContent = 'مرحلهٔ ' + faNumber(step) + ' از ۳';
+  $('stepPercent').textContent = faNumber(pct) + '٪';
+
+  hideStatus('formStatus');
+}
+
+$('next1').addEventListener('click', () => {
+  const name = $('name').value.trim();
+
+  if (name.length < 2) {
+    showStatus('formStatus', 'لطفاً نام و نام خانوادگی‌ات را وارد کن.', 'err');
+    $('name').focus();
+    return;
+  }
+
+  renderStep(2);
+});
+
+$('next2').addEventListener('click', () => {
+  if (!document.querySelector('input[name="class_name"]:checked')) {
+    showStatus('formStatus', 'لطفاً یکی از دو کلاس را انتخاب کن.', 'err');
+    return;
+  }
+
+  renderStep(3);
+});
+
+document.querySelectorAll('[data-back]').forEach(btn => {
+  btn.addEventListener('click', () => renderStep(Number(btn.dataset.back)));
+});
+
+$('feedback').addEventListener('input', () => {
+  $('charCount').textContent = faNumber($('feedback').value.length);
+});
+
+/* -------------------- ثبت پاسخ دانش‌آموز -------------------- */
+
+$('responseForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  hideStatus('formStatus');
+
+  const btn = $('submitBtn');
+  if (btn.disabled) return;
+
+  btn.disabled = true;
+  btn.textContent = 'در حال ثبت پاسخ‌ها…';
+
+  const name = $('name').value.trim();
+  const chosen = document.querySelector('input[name="class_name"]:checked');
+  const feedback = $('feedback').value.trim();
+
+  if (name.length < 2 || !chosen) {
+    showStatus(
+      'formStatus',
+      'اطلاعات مرحله‌های قبل کامل نیست؛ لطفاً به مرحلهٔ مربوط برگرد.',
+      'err'
+    );
+
+    btn.disabled = false;
+    btn.textContent = 'ثبت نهایی پاسخ‌ها ✓';
+    return;
+  }
+
+  try {
+    const { error } = await client
+      .from('student_responses')
+      .insert({
+        name,
+        class_name: chosen.value,
+        feedback: feedback || null
+      });
+
+    if (error) throw error;
+
+    $('wizard').classList.add('hidden');
+    $('successView').classList.remove('hidden');
+    $('formStatus').className = 'status';
+
+  } catch (err) {
+    console.error(err);
+
+    let message = 'ثبت پاسخ انجام نشد. اتصال اینترنت یا تنظیمات جدول را بررسی کن.';
+
+    if (err?.code === 'PGRST204' || /feedback/i.test(err?.message || '')) {
+      message = 'ستون پیشنهادها هنوز به جدول اضافه نشده است. مدیر سایت باید دستور SQL راهنما را در Supabase اجرا کند.';
+    }
+
+    showStatus('formStatus', message, 'err');
+
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'ثبت نهایی پاسخ‌ها ✓';
+  }
+});
+
+$('newResponseBtn').addEventListener('click', () => {
+  $('responseForm').reset();
+  $('charCount').textContent = '۰';
+
+  $('successView').classList.add('hidden');
+  $('wizard').classList.remove('hidden');
+
+  renderStep(1);
+  $('name').focus();
+});
+
+/* -------------------- پنجره مدیریت -------------------- */
+
+const adminModal = $('adminModal');
+let previousFocus = null;
+
+function openAdminModal() {
+  previousFocus = document.activeElement;
+  adminModal.classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+
+  const dashboardVisible = !$('dashboard').classList.contains('hidden');
+
+  if (dashboardVisible) {
+    $('refreshBtn').focus();
+  } else {
+    $('email').focus();
+  }
+}
+
+function closeAdminModal() {
+  adminModal.classList.add('hidden');
+  document.body.style.overflow = '';
+
+  if (previousFocus && typeof previousFocus.focus === 'function') {
+    previousFocus.focus();
+  }
+}
+
+$('openAdminBtn').addEventListener('click', openAdminModal);
+$('closeAdminBtn').addEventListener('click', closeAdminModal);
+
+adminModal.addEventListener('click', e => {
+  if (e.target === adminModal) closeAdminModal();
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && !adminModal.classList.contains('hidden')) {
+    closeAdminModal();
+  }
+});
+
+/* -------------------- ورود مدیر -------------------- */
+
+$('loginForm').addEventListener('submit', async e => {
+  e.preventDefault();
+  hideStatus('loginStatus');
+
+  const btn = $('loginBtn');
+  if (btn.disabled) return;
+
+  btn.disabled = true;
+  btn.textContent = 'در حال ورود…';
+
+  try {
+    const { error } = await client.auth.signInWithPassword({
+      email: $('email').value.trim(),
+      password: $('password').value
+    });
+
+    if (error) throw error;
+
+    await syncSession();
+
+  } catch (err) {
+    console.error(err);
+    showStatus('loginStatus', 'ورود ناموفق بود. ایمیل و رمز عبور را بررسی کن.', 'err');
+
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'ورود به پنل مدیریت';
+  }
+});
+
+/* -------------------- نشست و احراز هویت -------------------- */
+
+async function syncSession() {
+  try {
+    const { data: { session }, error } = await client.auth.getSession();
+
+    if (error) throw error;
+
+    if (session) {
+      $('loginBox').classList.add('hidden');
+      $('dashboard').classList.remove('hidden');
+      $('adminButtonLabel').textContent = 'پنل مدیریت';
+
+      if (!sessionChecked) {
+        sessionChecked = true;
+        await loadRows();
+      }
+
+    } else {
+      $('dashboard').classList.add('hidden');
+      $('loginBox').classList.remove('hidden');
+      $('adminButtonLabel').textContent = 'ورود مدیر';
+
+      cachedRows = [];
+      $('count').textContent = '۰';
+
+      $('responsesBody').replaceChildren();
+
+      const tr = document.createElement('tr');
+      const td = safeText('td', 'برای نمایش اطلاعات، به پنل وارد شوید.');
+      td.colSpan = 5;
+      td.className = 'muted';
+      tr.append(td);
+      $('responsesBody').append(tr);
+
+      sessionChecked = false;
+    }
+
+  } catch (err) {
+    console.error(err);
+    showStatus('loginStatus', 'بررسی وضعیت ورود ممکن نشد. اتصال اینترنت را بررسی کن.', 'err');
+  }
+}
+
+/* -------------------- دریافت پاسخ‌ها -------------------- */
+
+async function loadRows() {
+  if (loadingRows) return;
+
+  loadingRows = true;
+  hideStatus('dashboardStatus');
+
+  const loading = document.createElement('tr');
+  const loadingCell = safeText('td', 'در حال دریافت اطلاعات…');
+
+  loadingCell.colSpan = 5;
+  loadingCell.className = 'muted';
+  loading.append(loadingCell);
+
+  $('responsesBody').replaceChildren(loading);
+
+  try {
+    const { data, error } = await client
+      .from('student_responses')
+      .select('id,name,class_name,feedback,created_at')
+      .order('created_at', { ascending: false });
+
+    if (error) throw error;
+
+    cachedRows = data || [];
+    $('count').textContent = faNumber(cachedRows.length);
+
+    const body = $('responsesBody');
+    body.replaceChildren();
+
+    if (!cachedRows.length) {
+      const tr = document.createElement('tr');
+      const td = safeText('td', 'هنوز پاسخی ثبت نشده است.');
+
+      td.colSpan = 5;
+      td.className = 'muted';
+
+      tr.append(td);
+      body.append(tr);
+      return;
+    }
+
+    cachedRows.forEach((r, i) => {
+      const tr = document.createElement('tr');
+
+      tr.append(
+        safeText('td', faNumber(i + 1)),
+        safeText('td', r.name),
+        safeText('td', r.class_name),
+        safeText('td', r.feedback || '—'),
+        safeText('td', new Date(r.created_at).toLocaleString('fa-IR'))
+      );
+
+      body.append(tr);
+    });
+
+  } catch (err) {
+    console.error(err);
+
+    cachedRows = [];
+    $('count').textContent = '۰';
+    $('responsesBody').replaceChildren();
+
+    const tr = document.createElement('tr');
+    const td = safeText(
+      'td',
+      'امکان دریافت اطلاعات وجود ندارد. وجود ستون feedback و سیاست دسترسی مدیر را بررسی کن.'
+    );
+
+    td.colSpan = 5;
+    td.className = 'muted';
+    tr.append(td);
+    $('responsesBody').append(tr);
+
+    showStatus(
+      'dashboardStatus',
+      'خواندن اطلاعات ممکن نشد؛ ممکن است ستون feedback هنوز ساخته نشده باشد یا حساب واردشده مدیر مجاز نباشد.',
+      'err'
+    );
+
+  } finally {
+    loadingRows = false;
+  }
+}
+
+$('refreshBtn').addEventListener('click', loadRows);
+
+/* -------------------- خروج از حساب -------------------- */
+
+$('logoutBtn').addEventListener('click', async () => {
+  const btn = $('logoutBtn');
+  btn.disabled = true;
+
+  try {
+    const { error } = await client.auth.signOut();
+    if (error) throw error;
+
+    cachedRows = [];
+    sessionChecked = false;
+
+    await syncSession();
+
+  } catch (err) {
+    console.error(err);
+    showStatus('dashboardStatus', 'خروج از حساب انجام نشد. دوباره تلاش کن.', 'err');
+
+  } finally {
+    btn.disabled = false;
+  }
+});
+
+/* -------------------- خروجی CSV -------------------- */
+
+$('csvBtn').addEventListener('click', () => {
+  if (!cachedRows.length) {
+    showStatus('dashboardStatus', 'اطلاعاتی برای خروجی گرفتن وجود ندارد.', 'err');
+    return;
+  }
+
+  const rows = [
+    ['نام و نام خانوادگی', 'کلاس', 'نظر یا پیشنهاد', 'زمان ثبت'],
+    ...cachedRows.map(r => [
+      r.name,
+      r.class_name,
+      r.feedback || '',
+      new Date(r.created_at).toLocaleString('fa-IR')
+    ])
+  ];
+
+  const csv = '\uFEFF' + rows
+    .map(row =>
+      row.map(v => '"' + String(v ?? '').replace(/"/g, '""') + '"').join(',')
+    )
+    .join('\r\n');
+
+  const url = URL.createObjectURL(
+    new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+  );
+
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'payam-ghadir-responses.csv';
+
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+
+  setTimeout(() => URL.revokeObjectURL(url), 1000);
+});
+
+/* -------------------- تغییر وضعیت احراز هویت -------------------- */
+
+client.auth.onAuthStateChange((event, session) => {
+  if (event === 'SIGNED_OUT') {
+    sessionChecked = false;
+    cachedRows = [];
+  }
+
+  if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED' || event === 'INITIAL_SESSION') {
+    sessionChecked = false;
+  }
+
+  setTimeout(() => syncSession(), 0);
+});
+
+/* -------------------- راه‌اندازی اولیه -------------------- */
+
+renderStep(1);
+syncSession();
+</script>
+</body>
+</html>
